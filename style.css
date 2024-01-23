@@ -11,14 +11,24 @@
     color: white;
 }
 .main {
-    background-color: #FEFAE0;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 .card {
-    background-color: white;
+    height: 200px;
+    padding: 10px;
 }
+.projects {
+    background-color: #FEFAE0;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/3;
+    background-color: white;
+    border-radius: 15px;
+}
+
 .footer {
     grid-column: 1/-1;
     background-color: #283618;
@@ -29,10 +39,17 @@
 }
 p {
     color: grey;
+    max-width: 150px;
 }
 .sidebar-username {
     font-weight: 600;
 }
 .sidebar-title {
     color:grey;
+}
+.trending {
+    grid-column: 3;
+}
+.announcements {
+    grid-column: 3;
 }
