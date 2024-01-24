@@ -1,37 +1,49 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 4px;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 .header {
-    grid-column: 1/3;
+    grid-column: 2/3;
+    box-shadow: 3px 0px 15px 0px rgb(97, 97, 97);
 }
 .sidebar {
-    background-color: #DDA15E;
+    background-color: #0ea5e9;
     color: white;
+    grid-row: 1/3;
+    padding: 16px;
 }
 .main {
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #f3f4f6;
+    gap: 10px;
     
 }
 .card {
     height: 200px;
-    padding: 10px;
+    padding: 25px 0 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    background: linear-gradient(
+        to right, 
+        #facc15 2%, 
+        rgb(255, 255, 255) 2%, 
+        rgb(255, 255, 255)  100%
+      );
+    
 }
 .projects {
     background-color: #FEFAE0;
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(2, 1fr);
-    grid-column: 1/3;
+    grid-column: 1/5;
     background-color: white;
     border-radius: 15px;
-}
-
-.footer {
-    grid-column: 1/-1;
-    background-color: #283618;
 }
 .title {
     font-size: 18px;
@@ -45,11 +57,51 @@ p {
     font-weight: 600;
 }
 .sidebar-title {
-    color:grey;
+    font-weight: 600;
 }
 .trending {
-    grid-column: 3;
+    grid-column: 5;
 }
 .announcements {
-    grid-column: 3;
+    grid-column: 5;
+}
+button {
+    border: none;
+
+}
+.sidebar-btn {
+    background-color: #0ea5e9;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#sidebar-title {
+    font-size: 30px;
+}
+.navigation {
+    padding-bottom: 20px;
+}
+.main-icon {
+    padding-bottom: 20px;
+}
+#brand-icon {
+    font-size: 30px;
+}
+.announcements-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.trending-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+}
+.card-title {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
 }

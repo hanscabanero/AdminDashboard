@@ -6,17 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
 </head>
 <body>
 <div class="container">
     <div class="header">
+        <span class="material-icons">
+            search
+            </span>
         <form class="search">
             <input type="text" placeholder="Search">        
         </form>
         <img src="" alt="bell">
         <img src="" alt="icon">
-        <img src="" alt="username ">
-
+        <p id="header-username">Hans Cabanero</p>
         <div class="menu">
             <p>hi there,</p>
             <h1>Hans Cabanero @(hans)</h1>
@@ -26,21 +32,70 @@
         </div>
     </div>
     <div class="sidebar">
-        <img src="" alt="icon">
-        <h1>Dashboard</h1>
-
         <ul class="navigation">
-            <li><img src="" alt="homeimg"><button>Home</button></li>
-            <li><img src="" alt="profileimg"><button>Profile</button></li>
-            <li><img src="" alt="messagesimg"><button>Messages</button></li>
-            <li><img src="" alt="historyimg"><button>History</button></li>
-            <li><img src="" alt="tasksimg"><button>Tasks</button></li>
-            <li><img src="" alt="communitiesimg"><button>Communities</button></li> 
+                <div class="main-icon">
+                    <span class="material-icons" id="brand-icon">
+                        emoji_emotions
+                        </span>
+                        <button class="sidebar-btn" id="sidebar-title">Dashboard</button>
+                    </div>
+            <li>
+                <span class="material-icons">
+                    home
+                    </span>
+                <button class="sidebar-btn">Home</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    account_circle
+                    </span>
+                <button class="sidebar-btn">Profile</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    chat_bubble
+                    </span>
+                <button class="sidebar-btn">Messages</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    history
+                    </span>
+                <button class="sidebar-btn">History</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    task
+                    </span>
+                <button class="sidebar-btn">Tasks</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    groups
+                    </span>
+                <button class="sidebar-btn">Communities</button>
+            </li>
         </ul>
         <ul class="settings">
-            <li><img src="" alt="settingsimg"><button>Settings</button></li>
-            <li><img src="" alt="supportimg"><button>Support</button></li>
-            <li><img src="" alt="privacyimg"><button>Privacy</button></li>
+            <li>
+                <span class="material-icons">
+                    settings
+                    </span>
+                <button class="sidebar-btn">Settings</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    help_center
+                    </span>
+                <button class="sidebar-btn">Support</button>
+            </li>
+            <li>
+                <span class="material-icons">
+                    verified_user
+                    </span>
+                <button class="sidebar-btn">Privacy</button>
+            </li>
+
         </ul>  
     </div> 
     <div class="main">
@@ -83,57 +138,54 @@
             </div>
 
         </div>
-        <div class="announcements">
-            <p>Announcements</p>
-            <div class="sidebar-card">
-                <div class="sidebar-title">Site Maintenenance</div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
-                </p>
-                <br>
-                <div class="sidebar-title">Community Share Day</div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
-                </p>
-                <br>
-                <div class="sidebar-title">Updated Privacy Policy</div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
-                </p>
-            </div>
-        </div>  
-        <div class="trending">
-            <div class="sidebar-card">
-                <div class="profile-button">
-                    <img src="" alt="profile-icon">
-                    <p class="sidebar-username">@tegan</p>
-                    <p class="sidebar-title">World Peace Builder</p>
+        <div>
+            <div class="announcements">
+                <p class="card-title">Announcements</p>
+                <div class="announcements-card">
+                    <div class="sidebar-title">Site Maintenenance</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
+                    </p>
+                    <hr>
+                    <div class="sidebar-title">Community Share Day</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
+                    </p>
+                    <hr>
+                    <div class="sidebar-title">Updated Privacy Policy</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
+                    </p>
                 </div>
-                <div class="profile-button">
-                    <img src="" alt="profile-icon">
-                    <p class="sidebar-username">@morgan</p>
-                    <p class="sidebar-title">Super Cool Project</p>
+            </div>  
+
+            <div class="trending">
+                <p class="card-title">Trending</p>
+                <div class="trending-card">
+                    <div class="profile-button">
+                        <img src="" alt="profile-icon">
+                        <p class="sidebar-username">@tegan</p>
+                        <p class="sidebar-title">World Peace Builder</p>
+                    </div>
+                    <div class="profile-button">
+                        <img src="" alt="profile-icon">
+                        <p class="sidebar-username">@morgan</p>
+                        <p class="sidebar-title">Super Cool Project</p>
+                    </div>
+                    <div class="profile-button">
+                        <img src="" alt="profile-icon">
+                        <p class="sidebar-username">@kendall</p>
+                        <p class="sidebar-title">Life Changing App</p>
+                    </div>
+                    <div class="profile-button">
+                        <img src="" alt="profile-icon">
+                        <p class="sidebar-username">@alex</p>
+                        <p class="sidebar-title">No Traffic Maker</p>
+                    </div>
                 </div>
-                <div class="profile-button">
-                    <img src="" alt="profile-icon">
-                    <p class="sidebar-username">@kendall</p>
-                    <p class="sidebar-title">Life Changing App</p>
-                </div>
-                <div class="profile-button">
-                    <img src="" alt="profile-icon">
-                    <p class="sidebar-username">@alex</p>
-                    <p class="sidebar-title">No Traffic Maker</p>
-                </div>
-            </div>
-        </div>      
-    </div>
-        <div class="footer">
-            <p class="footer-text">Hans Cabanero The Odin Project Copyright 2024</p>
-            <div class="footer-buttons">
-                <button>IG</button>
-                <button>LinkedIn</button>
-                <button>X</button>
-            </div>
+            </div>      
+        </div>
+
         </div>
 </div>
 
