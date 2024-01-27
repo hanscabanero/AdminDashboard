@@ -14,21 +14,35 @@
 <body>
 <div class="container">
     <div class="header">
-        <span class="material-icons">
-            search
-            </span>
-        <form class="search">
-            <input type="text" placeholder="Search">        
-        </form>
-        <img src="" alt="bell">
-        <img src="" alt="icon">
-        <p id="header-username">Hans Cabanero</p>
+        <div id="search-container">
+            <div>
+                <span class="material-icons">
+                    search
+                    </span>
+                <form class="search">
+                    <input type="text">        
+                </form>
+            </div>
+            <div id="account-menu">
+                <span class="material-icons">
+                    notifications_active
+                    </span>
+                    <span class="material-icons">
+                        account_circle
+                        </span>
+                <p id="header-username">Hans Cabanero</p>
+            </div>
+        </div>
         <div class="menu">
-            <p>hi there,</p>
-            <h1>Hans Cabanero @(hans)</h1>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <div>
+                <p>hi there,</p>
+                <h1>Hans Cabanero @(hans)</h1>
+            </div>
+            <div id="btn-menu">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </div>
     <div class="sidebar">
@@ -101,10 +115,23 @@
     <div class="main">
         <div class="projects">
             <div class="card">
-                <div class="title">Lorem ipsum</div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
-                </p>
+                <div>
+                    <div class="title">Lorem ipsum</div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies eros nisi, nec dignissim libero aliquam quis.
+                    </p>  
+                </div>
+                <div class="card-btns">
+                    <span class="material-icons">
+                        star
+                        </span>
+                        <span class="material-icons">
+                            visibility
+                         </span>
+                         <span class="material-icons">
+                            share
+                         </span>
+                </div>
             </div>
             <div class="card">
                 <div class="title">Lorem ipsum</div>
@@ -139,8 +166,8 @@
 
         </div>
         <div>
+            <p class="card-title">Announcements</p>
             <div class="announcements">
-                <p class="card-title">Announcements</p>
                 <div class="announcements-card">
                     <div class="sidebar-title">Site Maintenenance</div>
                     <p>
